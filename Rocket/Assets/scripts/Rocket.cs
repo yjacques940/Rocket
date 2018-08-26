@@ -5,8 +5,8 @@ using UnityEngine;
 public class Rocket : MonoBehaviour {
     private Rigidbody rigidBody;
     [SerializeField] public float ForceUpward = 100;
-    [SerializeField] public float ForceToRight= 100;
-    [SerializeField] public float ForceToLeft = 100;
+    [SerializeField] public float ForceToRight= 25;
+    [SerializeField] public float ForceToLeft = 25;
     // Use this for initialization
     void Start ()
     {
