@@ -22,7 +22,11 @@ public class Rocket : MonoBehaviour {
         }
         if(Input.GetAxis("Horizontal") > 0)
         {
-            rigidBody.AddForceAtPosition(new Vector3(ForceToRight,0,0),new Vector3();
+            rigidBody.AddForceAtPosition(new Vector3(ForceToRight,0,0),new Vector3());
+        }
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            rigidBody.AddForceAtPosition(new Vector3(0, ForceToLeft, 0), new Vector3());
         }
 	}
 }
